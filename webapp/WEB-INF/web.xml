@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>Servelt</display-name>
+  <welcome-file-list>
+    
+   <welcome-file>login.html</welcome-file>
+  </welcome-file-list>
+  <context-param>
+  <param-name>UserName</param-name>
+  <param-value>Gaurav</param-value>
+  </context-param>
+  <servlet>
+  <servlet-name>first</servlet-name>
+  <servlet-class>com.pack.firstservelt</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>first</servlet-name>
+  <url-pattern>/first</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>second</servlet-name>
+  <servlet-class>com.pack.secondservelt</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+<servlet-name>second</servlet-name>
+ <url-pattern>/second</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>third</servlet-name>
+  <servlet-class>com.pack.RegisterServlet</servlet-class>
+   </servlet>
+   
+   
+  <servlet-mapping>
+  <servlet-name>third</servlet-name>
+<url-pattern>/third</url-pattern>
+  </servlet-mapping>
+
+
+<servlet>
+<servlet-name>welcome</servlet-name>
+<servlet-class>com.pack.welcomeServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>welcome</servlet-name>
+<url-pattern>/welcome</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+<servlet-name>cal</servlet-name>
+<servlet-class>com.pack.calculator</servlet-class>
+</servlet>
+
+
+<servlet-mapping>
+<servlet-name>cal</servlet-name>
+<url-pattern>/calculator</url-pattern>
+</servlet-mapping>
+
+<servlet>
+<servlet-name>Login</servlet-name>
+<servlet-class>com.pack.Login</servlet-class>
+
+<init-param>
+<param-name>Developer</param-name>
+<param-value>Gaurav</param-value>
+</init-param>
+
+</servlet>
+
+
+
+<servlet-mapping>
+<servlet-name>Login</servlet-name>
+<url-pattern>/Login</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+<servlet-name>Welcome1</servlet-name>
+<servlet-class>com.pack.Welcome</servlet-class>
+
+<init-param>
+<param-name>Developer</param-name>
+<param-value>chetan</param-value>
+</init-param>
+
+</servlet>
+
+
+
+<servlet-mapping>
+<servlet-name>Welcome1</servlet-name>
+<url-pattern>/Welcome1</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+<servlet-name>Logout</servlet-name>
+<servlet-class>com.pack.Logout</servlet-class>
+
+
+<init-param>
+<param-name>Developer</param-name>
+<param-value>saurav</param-value>
+</init-param>
+</servlet>
+
+<servlet-mapping>
+<servlet-name>Logout</servlet-name>
+<url-pattern>/Logout</url-pattern>
+</servlet-mapping>
+</web-app>
